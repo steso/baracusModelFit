@@ -1,0 +1,75 @@
+Fri Feb  2 10:19:26 UTC 2018
+setenv SUBJECTS_DIR /output/freesurfer
+cd /
+/opt/freesurfer/bin/mris_preproc --s sub-meditation5158_ses-M2 --target fsaverage4 --hemi rh --meas area --out /output/baracus/sub-meditation5158_ses-M2/data/rh.area.mgh
+
+Linux f13f6f8e6313 4.4.0-97-generic #120-Ubuntu SMP Tue Sep 19 17:28:18 UTC 2017 x86_64 x86_64 x86_64 GNU/Linux
+$Id: mris_preproc,v 1.59.2.4 2012/12/06 16:06:52 mreuter Exp $
+freesurfer-Linux-centos6_x86_64-stable-pub-v5.3.0
+tmpdir is /output/baracus/sub-meditation5158_ses-M2/data/tmp.mris_preproc.6875
+Src rh sphere.reg
+Trg rh sphere.reg
+
+
+
+
+---------------------------------------------------
+#@# 1/1 sub-meditation5158_ses-M2 Fri Feb  2 10:19:26 UTC 2018 --------------
+-----------------------
+mri_surf2surf --srcsubject sub-meditation5158_ses-M2 --srchemi rh --srcsurfreg sphere.reg --trgsubject fsaverage4 --trghemi rh --trgsurfreg sphere.reg --tval /output/baracus/sub-meditation5158_ses-M2/data/tmp.mris_preproc.6875/sub-meditation5158_ses-M2.1.mgh --sval /output/freesurfer/sub-meditation5158_ses-M2/surf/rh.area --jac --sfmt curv --noreshape --no-cortex
+Source registration surface changed to sphere.reg
+Target registration surface changed to sphere.reg
+srcsubject = sub-meditation5158_ses-M2
+srcval     = /output/freesurfer/sub-meditation5158_ses-M2/surf/rh.area
+srctype    = curv
+trgsubject = fsaverage4
+trgval     = /output/baracus/sub-meditation5158_ses-M2/data/tmp.mris_preproc.6875/sub-meditation5158_ses-M2.1.mgh
+trgtype    = 
+srcsurfreg = sphere.reg
+trgsurfreg = sphere.reg
+srchemi    = rh
+trghemi    = rh
+frame      = 0
+fwhm-in    = 0
+fwhm-out   = 0
+label-src  = (null)
+label-trg  = (null)
+OKToRevFaceOrder  = 1
+Reading source surface reg /output/freesurfer/sub-meditation5158_ses-M2/surf/rh.sphere.reg
+Loading source data
+Reading curvature file /output/freesurfer/sub-meditation5158_ses-M2/surf/rh.area
+Reading target surface reg /output/freesurfer/fsaverage4/surf/rh.sphere.reg
+Done
+Mapping Source Volume onto Source Subject Surface with Jacobian Correction
+surf2surf_nnfr_jac: building source hash (res=16).
+Surf2SurfJac: 1st Forward Loop (2562)
+Surf2SurfJac: 2nd Forward Loop (2562)
+surf2surf_nnfr: building target hash (res=16).
+Surf2SurfJac: Reverse Loop (121945)
+Reverse Loop had 119383 hits
+INFO: nSrcLost = 0
+surf2surf_nnfr_jac() done
+nTrg121 =     0, nTrgMulti =  2562, MnTrgMultiHits = 47.5976
+nSrc121 = 121945, nSrcLost =     0, nSrcMulti =     0, MnSrcMultiHits = 0
+Saving target data
+Saving to /output/baracus/sub-meditation5158_ses-M2/data/tmp.mris_preproc.6875/sub-meditation5158_ses-M2.1.mgh
+
+
+
+-----------------------
+mri_concat /output/baracus/sub-meditation5158_ses-M2/data/tmp.mris_preproc.6875/sub-meditation5158_ses-M2.1.mgh --o /output/baracus/sub-meditation5158_ses-M2/data/rh.area.mgh
+ninputs = 1
+Checking inputs
+nframestot = 1
+Allocing output
+Done allocing
+nframes = 1
+Writing to /output/baracus/sub-meditation5158_ses-M2/data/rh.area.mgh
+
+
+
+Cleaning up
+-----------------------
+rm -r /output/baracus/sub-meditation5158_ses-M2/data/tmp.mris_preproc.6875
+Fri Feb  2 10:19:28 UTC 2018
+mris_preproc done

@@ -1,0 +1,5 @@
+subject_id	model	modality	predicted_age	baracus_version
+sub-meditation5123_ses-M2	Liem2016__OCI_norm	aseg	56.916589785640184	v1.1.2
+sub-meditation5123_ses-M2	Liem2016__OCI_norm	area	51.7143290231631	v1.1.2
+sub-meditation5123_ses-M2	Liem2016__OCI_norm	thickness	67.77446551672668	v1.1.2
+sub-meditation5123_ses-M2	Liem2016__OCI_norm	stacked-anatomy	61.43045710472032	v1.1.2
